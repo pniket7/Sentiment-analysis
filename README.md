@@ -5,7 +5,7 @@
 - Sentiment Analysis using Logistic Regression.
 
 
-**2. PROJECT OVERVIEW:**
+**2. PROJECT OVERVIW:**
 
 - This code performs sentiment analysis on text data using a logistic regression model.
 - It uses the “pandas” library to read and manipulate the data, “scikit-learn” library for vectorization and logistic regression, and “gradio” library for creating a simple web-based user interface.
