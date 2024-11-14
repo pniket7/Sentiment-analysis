@@ -25,7 +25,7 @@ You can install them using pip or conda package manager.
 
 **4. USAGE:**
 
-- Load Data: The code reads the input data from a CSV file located at "/home/niket/Videos/twitterclean.csv' using the "pd.read\_csv()" function from pandas. The data should have a column named "twitts" containing the text data to be analyzed, and a column named "sentiment" containing the sentiment labels (positive or negative).
+- Load Data: The code reads the input data from a CSV file located at "twitterclean.csv' using the "pd.read\_csv()" function from pandas. The data should have a column named "twitts" containing the text data to be analyzed, and a column named "sentiment" containing the sentiment labels (positive or negative).
 - Train the Model: The data is split into training and testing sets using pandas dataframe slicing. Then, the "TfidfVectorizer" class from scikit-learn is used to convert the text data into a numerical representation. A logistic regression model is trained on the training data using the "LogisticRegression" class from scikit-learn.
 - Predict Sentiment: The "pred\_sentiment()" function takes a text input, vectorizes it using the trained vectorizer, and predicts the sentiment using the trained logistic regression model. The predicted sentiment is returned as 'positive' or 'negative' based on the predicted class label.
 - Gradio Interface: The "gradio" library is used to create a simple web-based user interface for the sentiment analysis model. It takes input from the user through a textbox, passes it to the "pred\_sentiment()" function, and displays the predicted sentiment in another textbox.
